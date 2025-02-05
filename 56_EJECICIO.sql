@@ -14,11 +14,11 @@ el monto acumulado de venta de sus subordinados, y la comisión obtenida.
 USE Northwind
 GO
 SELECT
-    j.EmployeeID, j.LastName,
-    e.EmployeeID, e.LastName,
-    YEAR(o.OrderDate),
-    DATENAME(MONTH,o.OrderDate),
-    od.Quantity * od.UnitPrice * (1-od.Discount)
+    j.EmployeeID, j.LastName AS APELLIDO,
+    e.EmployeeID, e.LastName AS APELLIDO,
+    YEAR(o.OrderDate) AS AÑO,
+    DATENAME(MONTH,o.OrderDate) AS MES,
+    od.Quantity * od.UnitPrice * (1-od.Discount) AS COMISION
 FROM Employees j
 INNER JOIN Employees e
 ON j.EmployeeID = e.ReportsTo

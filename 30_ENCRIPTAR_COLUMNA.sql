@@ -4,7 +4,7 @@ ANTES DE ACTUALIZAR UNA COLUMN
 
 USE NorthwindSQL
 GO
-SELECT pwd_emp_vb, PWDENCRYPT(dni_emp_ch)
+SELECT pwd_emp_vb, PWDENCRYPT(dni_emp_ch) AS COLUMNA_ENCRIPTADA
 FROM Personal.Empleados
 GO
 
@@ -15,3 +15,7 @@ Aunque todavía puede funcionar en algunos entornos, está en desuso y no se recom
 para sistemas modernos debido a la falta de estándares criptográficos actuales.
 
 */
+
+SELECT *
+FROM Personal.Empleados
+GO

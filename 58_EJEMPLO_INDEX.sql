@@ -13,7 +13,10 @@ ON [Almacen].[Productos]
 GO
 ----
 CREATE INDEX ix_almacen_productos_nombre_del_producto
-ON [Almacen].[Productos]([Nombre del producto])
+ON [Almacen].[Productos]
+(
+	[Nombre del producto]
+)
 GO
 ---
 CREATE NONCLUSTERED INDEX [ix_personal_empleados_cod_rol_in]

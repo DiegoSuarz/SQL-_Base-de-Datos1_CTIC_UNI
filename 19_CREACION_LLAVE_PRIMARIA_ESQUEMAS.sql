@@ -9,6 +9,7 @@ IF EXISTS
     WHERE
             s.name = 'Personal'
         AND
+
             t.name = 'rol'
 )
 DROP TABLE Personal.rol

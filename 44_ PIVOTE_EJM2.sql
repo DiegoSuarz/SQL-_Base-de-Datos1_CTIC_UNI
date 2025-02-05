@@ -1,5 +1,9 @@
 USE pvl
 GO
+
+SELECT cod_sex_bi FROM Beneficiario GO
+
+
 SELECT
     [0] AS FEMENINO,
     [1] AS MASCULINO,

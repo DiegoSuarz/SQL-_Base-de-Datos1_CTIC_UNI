@@ -39,7 +39,7 @@ GO
 ---------------------------------------------------------------------------
 DELETE FROM Personal.rol
 GO
--- AL ELIMINAR LA TABLA EL VALOR DE LA LLAVE PRIMARIA NO SE BORRA
+-- AL ELIMINAR LA TABLA EL INDICE DE LA LLAVE PRIMARIA NO SE BORRA
 --Y AL VOLVER A  CREAR LA TABLA CREA REGISTROS DONDE SE QUEDO
 
 ---------------------------------------------------------------------------

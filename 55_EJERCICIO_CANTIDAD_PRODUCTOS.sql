@@ -19,5 +19,7 @@ ON sc.ProductSubcategoryID = p.ProductSubcategoryID
 GROUP BY c.Name
 ORDER BY 2 DESC
 GO
+
+----------------------------------------------------------
 SELECT * FROM v_categorias_x_productos_cantidad_registrada
 GO

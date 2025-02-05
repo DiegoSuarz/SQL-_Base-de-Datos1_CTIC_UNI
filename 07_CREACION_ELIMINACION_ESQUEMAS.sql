@@ -104,7 +104,7 @@ GO
 CREATE SCHEMA Sistemas AUTHORIZATION dbo;
 GO
 -----------------------------------------
-SELECT name
+SELECT *--name
 FROM sys.schemas
 WHERE principal_id != schema_id
 ORDER BY name 

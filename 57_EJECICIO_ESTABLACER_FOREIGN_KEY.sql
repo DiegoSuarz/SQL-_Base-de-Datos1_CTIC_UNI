@@ -5,7 +5,7 @@
 USE NorthwindSQL
 GO
 
-SELECT [Código de producto] FROM Almacen.Productos GO
+SELECT [Código de producto]  FROM Almacen.Productos GO
 
 SELECT
     [Código de producto], COUNT(*)

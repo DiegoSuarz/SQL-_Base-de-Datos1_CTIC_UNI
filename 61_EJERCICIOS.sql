@@ -2,6 +2,7 @@
 
 USE pvl
 GO
+
 SELECT pat_ben_vc, mat_ben_vc, nom_ben_vc, fec_nac_ben_da,
 DATEDIFF(DAY, fec_nac_ben_da, '20040731')/365.256363004,
 CONVERT(INT,DATEDIFF(DAY, fec_nac_ben_da, '20040731')/365.256363004) AS EDAD

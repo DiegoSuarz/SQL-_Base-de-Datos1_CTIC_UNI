@@ -64,5 +64,7 @@ AS
     GROUP BY c.CategoryName
     ORDER BY 2 DESC
 GO
+
+---------------------------------------------------------
 SELECT * FROM v_categoria_x_producto_cantidad_registrada
 GO

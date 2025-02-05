@@ -14,12 +14,20 @@ Este tipo de unión devuelve solo las filas que tienen coincidencias en ambas tab
 */
 USE Northwind
 GO
+----------------------------------
+SELECT * FROM Categories GO
+SELECT * FROM Products GO
+SELECT * FROM [Order Details] G0
+
+----------------------------------
+
+
 SELECT
     c.CategoryName AS Categoría,
     SUM(od.[Quantity]) AS Cantidad
 FROM Categories c
 INNER JOIN Products p
-ON c.CategoryID = p.CategoryID
+ON c.CategoryID = p.CategoryID 
 INNER JOIN [Order Details] od
 ON p.ProductID = od.ProductID
 GROUP BY c.CategoryName

@@ -135,3 +135,15 @@ SELECT xusertype, name, xtype, length, xprec,xscale
 FROM systypes
 ORDER BY 2
 GO
+
+
+------------------------------------------------------------
+--Filtrar por datos personalizados:
+
+SELECT xusertype, name, xtype, length, xprec,xscale
+FROM systypes
+WHERE name LIKE 'td_%'
+ORDER BY 2
+GO
+
+

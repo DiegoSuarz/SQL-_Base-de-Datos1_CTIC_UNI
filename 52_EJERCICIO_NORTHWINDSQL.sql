@@ -4,6 +4,10 @@
 */
 USE NorthwindSQL
 GO
+
+ SELECT * FROM Almacen.[Transacciones de inventario]
+
+
 SELECT
     p.Id,
     p.[Código de producto],
