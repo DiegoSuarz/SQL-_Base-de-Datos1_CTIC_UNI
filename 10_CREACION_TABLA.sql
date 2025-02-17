@@ -1,3 +1,13 @@
+/*
+¿Qué es una tabla?
+Una tabla es un objeto de base de datos que organiza y almacena datos
+en un formato estructurado.
+
+Las tablas son la forma más fundamental de almacenamiento de datos en 
+SQL Server y se componen de filas y columnas.
+*/
+
+
 USE empresa_oti --SELECCIONAR BASE DE DATOS
 GO
 IF EXISTS
@@ -29,3 +39,70 @@ VALUES(8, 'R0008','Transportes');
 GO
 SELECT * FROM rol
 GO
+
+------------------------------------------------------------------------------
+--CREAR TABLA A PARTIR DE OTRA TABLA EXISTENTE
+USE [Northwind]
+GO
+
+IF EXISTS
+(
+    SELECT name
+    FROM sys.tables
+    WHERE name = 'X'
+)
+DROP TABLE[dbo].[X]
+GO
+
+SELECT [OrderID]
+      ,[CustomerID]
+      ,[EmployeeID]
+      ,[OrderDate]
+      ,[RequiredDate]
+      ,[ShippedDate]
+      ,[ShipVia]
+      ,[Freight]
+      ,[ShipName]
+      ,[ShipAddress]
+      ,[ShipCity]
+      ,[ShipRegion]
+      ,[ShipPostalCode]
+      ,[ShipCountry]
+	INTO [dbo].[X]
+  FROM [dbo].[Orders]
+  --WHERE 
+ GO
+
+ ---------------------------------------------------------
+ --CREAR TABLA A PARTIR DE OTRA TABLA EXISTENTE CON FILTRO
+ USE [Northwind]
+GO
+
+IF EXISTS
+(
+    SELECT name
+    FROM sys.tables
+    WHERE name = 'X'
+)
+DROP TABLE[dbo].[X]
+GO
+
+SELECT [OrderID]
+      ,[CustomerID]
+      ,[EmployeeID]
+      ,[OrderDate]
+      ,[RequiredDate]
+      ,[ShippedDate]
+      ,[ShipVia]
+      ,[Freight]
+      ,[ShipName]
+      ,[ShipAddress]
+      ,[ShipCity]
+      ,[ShipRegion]
+      ,[ShipPostalCode]
+      ,[ShipCountry]
+	INTO [dbo].[X]
+  FROM [dbo].[Orders]
+  WHERE OrderID < 10300
+ GO
+

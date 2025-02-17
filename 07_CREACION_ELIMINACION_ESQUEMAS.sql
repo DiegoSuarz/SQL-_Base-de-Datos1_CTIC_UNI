@@ -1,4 +1,33 @@
 --CREACION Y ELIMINACION DE ESQUEMAS
+/*
+Esquemas
+Un esquema es una forma de organizar y agrupar objetos de base de datos, 
+como tablas, vistas, procedimientos almacenados, funciones y más.
+
+Los esquemas proporcionan una estructura lógica que permite administrar mejor 
+los objetos y gestionar la seguridad y el acceso a los mismos.
+
+Características del Esquema
+Agrupación de Objetos:
+Los esquemas permiten agrupar objetos relacionados en una base de datos, 
+lo que facilita la organización y la navegación.
+
+Seguridad:
+Se pueden definir permisos a nivel de esquema, lo que permite controlar el 
+acceso a todos los objetos dentro de un esquema de manera centralizada.
+Por ejemplo, se puede otorgar acceso a un esquema específico a ciertos 
+usuarios, limitando su capacidad para acceder a otros objetos.
+
+Nombres Únicos:
+Un objeto dentro de un esquema debe tener un nombre único en el contexto 
+del esquema, pero puede haber objetos con el mismo nombre en diferentes esquemas.
+Esto permite una mayor flexibilidad en la nomenclatura de los objetos.
+
+Facilidad de Mantenimiento:
+Los esquemas facilitan el mantenimiento de objetos relacionados, ya que se pueden manejar como un conjunto.
+También pueden simplificar la migración de objetos entre bases de datos.
+*/
+
 
 USE empresa_oti
 GO
